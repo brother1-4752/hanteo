@@ -6,9 +6,17 @@ import "./custom.scss";
 const GlobalStyle = createGlobalStyle`
     ${reset}
 
-    body {
+    body, body>div#root {
+        width: 100%;
         font-family: "PretendardM", sans-serif;
-        font-size: var(--font-size-16);
+        font-size: var(--font-size-14);
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--font-black);
     }
 `;
 

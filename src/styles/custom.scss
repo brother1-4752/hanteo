@@ -1,10 +1,10 @@
 :root {
   /* colors */
-  --color-white-1: rgb(255 255 255); // #ffffff;
-  --color-pink-1: rgb(255 54 93); // #ff365d;
-  --color-pink-2: rgb(214 90 133); // #d65a85;
-  --color-gray-1: rgb(52 58 64); // #343a40;
-  --color-black-1: rgb(0 0 0); // #000000;
+  --color-white-1: rgb(255 255 255);
+  --color-pink-1: rgb(255 54 93);
+  --color-pink-2: rgb(255, 176, 178);
+  --color-gray-1: rgb(52 58 64);
+  --color-black-1: rgb(0 0 0);
 
   /* font-size */
   --font-size-12: 12px;
@@ -22,6 +22,8 @@
   --font-bold: PretendardB, sans-serif;
 
   /* Spacing*/
-  --spacing-1: 10px;
-  --spacing-2: 20px;
+  --spacing-1: 12px;
+  --spacing-2: 16px;
+  --spacing-3: 20px;
+  --spacing-4: 24px;
 }
