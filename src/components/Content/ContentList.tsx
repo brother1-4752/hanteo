@@ -29,6 +29,7 @@ const StyledContentList = styled.ul`
   top: 290px;
   height: 45%;
   overflow: scroll;
+  padding-bottom: 10px;
 
   .header-title {
     font-size: var(--font-size-21);
