@@ -4,13 +4,9 @@ const CommonFooter = () => {
   return (
     <FooterStyled>
       <div className="footer-top">
-        <h3>
-          Company
-          <br />
-          Introduction
-        </h3>
+        <h3>Company Introduction</h3>
         <h3>Partnership</h3>
-        <h3>Coporate</h3>
+        <h3>Corporate</h3>
       </div>
       <div className="footer-bottom">
         <p>Copyright © HANTEO GLOBAL Inc. All Rights Reserved</p>
