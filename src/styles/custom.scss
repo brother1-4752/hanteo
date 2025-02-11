@@ -1,0 +1,27 @@
+:root {
+  /* colors */
+  --color-white-1: rgb(255 255 255); // #ffffff;
+  --color-pink-1: rgb(255 54 93); // #ff365d;
+  --color-pink-2: rgb(214 90 133); // #d65a85;
+  --color-gray-1: rgb(52 58 64); // #343a40;
+  --color-black-1: rgb(0 0 0); // #000000;
+
+  /* font-size */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+
+  /* font-family */
+  --font-light: PretendardL, sans-serif;
+  --font-medium: PretendardM, sans-serif;
+  --font-semibold: PretendardSemiB, sans-serif;
+  --font-bold: PretendardB, sans-serif;
+
+  /* Spacing*/
+  --spacing-1: 10px;
+  --spacing-2: 20px;
+}
