@@ -26,6 +26,10 @@ const StyledGnb = styled.nav`
   background-color: var(--color-pink-2);
   font-family: "PretendardB", sans-serif;
 
+  a {
+    cursor: pointer;
+  }
+
   a.active {
     color: var(--color-white-1);
   }
