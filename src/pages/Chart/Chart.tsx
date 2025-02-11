@@ -1,10 +1,14 @@
+import styled from "styled-components";
+import { Banner } from "../../types/Banner";
 import BannerList from "../../components/Banner/BannerList";
+import ContentList from "../../components/Content/ContentList";
 import banner_1 from "../../assets/images/banner_1.webp";
 import banner_2 from "../../assets/images/banner_2.webp";
 import banner_3 from "../../assets/images/banner_3.webp";
-import styled from "styled-components";
-import { Banner } from "../../types/Banner";
-import ContentList from "../../components/Content/ContentList";
+import content_2 from "../../assets/images/content_2.webp";
+import content_3 from "../../assets/images/content_3.webp";
+import content_4 from "../../assets/images/content_4.webp";
+import content_5 from "../../assets/images/content_5.webp";
 
 const Chart = () => {
   const mockBanners: Banner[] = [
@@ -31,12 +35,29 @@ const Chart = () => {
     },
   ];
 
-  const mockContents = [{ id: 1, thumbnail: "", title: "", description: "" }];
+  const mockContents = [
+    { thumbnail: content_2, title: "나는 반딧불", author: "Hwang Ga Ram" },
+    { thumbnail: content_3, title: "Whiplash", author: "aespa" },
+    { thumbnail: content_4, title: "HOME SWEET HOME", author: "G-DRAGON" },
+    { thumbnail: content_5, title: "APT.", author: "ROSE" },
+    { thumbnail: content_2, title: "나는 반딧불", author: "Hwang Ga Ram" },
+    { thumbnail: content_3, title: "Whiplash", author: "aespa" },
+    { thumbnail: content_4, title: "HOME SWEET HOME", author: "G-DRAGON" },
+    { thumbnail: content_5, title: "APT.", author: "ROSE" },
+    { thumbnail: content_2, title: "나는 반딧불", author: "Hwang Ga Ram" },
+    { thumbnail: content_3, title: "Whiplash", author: "aespa" },
+    { thumbnail: content_4, title: "HOME SWEET HOME", author: "G-DRAGON" },
+    { thumbnail: content_5, title: "APT.", author: "ROSE" },
+    { thumbnail: content_2, title: "나는 반딧불", author: "Hwang Ga Ram" },
+    { thumbnail: content_3, title: "Whiplash", author: "aespa" },
+    { thumbnail: content_4, title: "HOME SWEET HOME", author: "G-DRAGON" },
+    { thumbnail: content_5, title: "APT.", author: "ROSE" },
+  ];
 
   return (
     <StyledChartLayout>
       <BannerList banners={mockBanners} />
-      <ContentList />
+      <ContentList contents={mockContents} />
     </StyledChartLayout>
   );
 };
@@ -47,7 +68,7 @@ const StyledChartLayout = styled.main`
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  width: 95%;
+  width: 90%;
   gap: var(--spacing-2);
   padding: var(--spacing-2) 0;
 `;
