@@ -7,7 +7,10 @@ type BannerListItemProps = {
 
 const BannerListItem = ({ banner }: BannerListItemProps) => {
   return (
-    <StyledBannerListItem onClick={() => window.open(banner.landingUrl)}>
+    <StyledBannerListItem
+      onClick={() => window.open(banner.landingUrl)}
+      bannerId={banner.id}
+    >
       <div className="thumbnail-wrapper">
         <img className="thumbnail" src={banner.imgSrc} alt={banner.title} />
       </div>
@@ -24,7 +27,7 @@ const BannerListItem = ({ banner }: BannerListItemProps) => {
 
 export default BannerListItem;
 
-const StyledBannerListItem = styled.li`
+const StyledBannerListItem = styled.li<{ bannerId: number }>`
   width: 100%;
   display: flex;
   flex-direction: column;
