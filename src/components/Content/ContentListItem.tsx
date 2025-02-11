@@ -32,6 +32,8 @@ const StyledContentListItem = styled.li`
   display: flex;
   padding: 12px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
 
   .thumbnail {
     width: 45px;
@@ -55,5 +57,10 @@ const StyledContentListItem = styled.li`
       font-size: var(--font-size-12);
       color: var(--color-gray-3);
     }
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
   }
 `;
